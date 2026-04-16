@@ -40,7 +40,7 @@ export const loginSchema = z.object({
 export const registerSchema = z.object({
   name: z.string().min(2, "Meno musí mať aspoň 2 znaky"),
   email: z.string().email("Neplatný email"),
-  password: z.string().min(6, "Heslo musí mať aspoň 6 znakov"),
+  password: z.string().min(8, "Heslo musí mať aspoň 8 znakov"),
 });
 
 export const addUpdateSchema = z.object({

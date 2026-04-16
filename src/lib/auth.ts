@@ -2,9 +2,11 @@ import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 import { prisma } from "./prisma";
 
-const JWT_SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET || "default-secret-change-me"
-);
+const jwtSecretValue = process.env.JWT_SECRET;
+if (!jwtSecretValue) {
+  throw new Error("JWT_SECRET environment variable is not set.");
+}
+const JWT_SECRET = new TextEncoder().encode(jwtSecretValue);
 
 export interface JWTPayload {
   userId: string;

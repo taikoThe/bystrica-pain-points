@@ -27,18 +27,3 @@ export async function GET(request: NextRequest, { params }: Params) {
   return NextResponse.json(report);
 }
 
-export async function PATCH(request: NextRequest, { params }: Params) {
-  const { id } = await params;
-
-  try {
-    const body = await request.json();
-    const report = await prisma.report.update({
-      where: { id },
-      data: body,
-      include: { category: true },
-    });
-    return NextResponse.json(report);
-  } catch {
-    return NextResponse.json({ error: "Nepodarilo sa aktualizovať hlásenie" }, { status: 500 });
-  }
-}
