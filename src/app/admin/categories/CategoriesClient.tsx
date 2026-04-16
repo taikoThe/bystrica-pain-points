@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { api } from "@/lib/api-path";
 import { CategoryBadge } from "@/components/shared/CategoryBadge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -132,7 +133,7 @@ export function CategoriesClient({ categories }: { categories: CategoryWithCount
     if (!confirm(`Naozaj chcete vymazať kategóriu "${cat.name}"?`)) return;
 
     try {
-      const res = await fetch(`/api/admin/categories/${cat.id}`, { method: "DELETE" });
+      const res = await fetch(api(`/api/admin/categories/${cat.id}`), { method: "DELETE" });
       if (!res.ok) {
         const data = await res.json();
         alert(data.error || "Vymazanie zlyhalo");

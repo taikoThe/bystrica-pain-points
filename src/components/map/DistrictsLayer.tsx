@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { api } from "@/lib/api-path";
 import { GeoJSON, useMap } from "react-leaflet";
 import L from "leaflet";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
@@ -24,7 +25,7 @@ export function DistrictsLayer({ visible }: { visible: boolean }) {
   const [data, setData] = useState<FeatureCollection | null>(null);
 
   useEffect(() => {
-    fetch("/districts.geojson")
+    fetch(api("/districts.geojson"))
       .then((res) => res.json())
       .then((geojson) => setData(geojson))
       .catch(() => {});

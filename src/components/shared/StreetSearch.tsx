@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { MapPin } from "lucide-react";
+import { api } from "@/lib/api-path";
 
 interface StreetSearchProps {
   value: string;
@@ -20,7 +21,7 @@ export function StreetSearch({ value, onChange, onSelect, placeholder = "Zadajte
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    fetch("/streets.json")
+    fetch(api("/streets.json"))
       .then((r) => r.json())
       .then((data) => setStreets(data))
       .catch(() => {});

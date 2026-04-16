@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { api } from "@/lib/api-path";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -67,7 +68,7 @@ export function ReportForm({ categories, initialLocation }: ReportFormProps) {
         .catch(() => {});
 
       // Check for nearby reports
-      fetch(`/api/reports/nearby?lat=${form.latitude}&lng=${form.longitude}&radius=100`)
+      fetch(api(`/api/reports/nearby?lat=${form.latitude}&lng=${form.longitude}&radius=100`))
         .then((r) => r.json())
         .then((data) => setNearbyReports(data))
         .catch(() => {});
@@ -103,14 +104,14 @@ export function ReportForm({ categories, initialLocation }: ReportFormProps) {
       for (const file of files) {
         const formData = new FormData();
         formData.append("file", file);
-        const uploadRes = await fetch("/api/upload", { method: "POST", body: formData });
+        const uploadRes = await fetch(api("/api/upload"), { method: "POST", body: formData });
         if (uploadRes.ok) {
           const { url } = await uploadRes.json();
           attachmentUrls.push(url);
         }
       }
 
-      const res = await fetch("/api/reports", {
+      const res = await fetch(api("/api/reports"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

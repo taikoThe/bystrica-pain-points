@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { api } from "@/lib/api-path";
 import { ReportDetail } from "@/components/reports/ReportDetail";
 import type { ReportWithRelations } from "@/types";
 
@@ -21,7 +22,7 @@ export function ReportDetailPage({ report, userId }: ReportDetailPageProps) {
 
   const handleConfirm = async () => {
     try {
-      const res = await fetch(`/api/reports/${report.id}/confirm`, {
+      const res = await fetch(api(`/api/reports/${report.id}/confirm`), {
         method: "POST",
       });
       if (res.ok) {

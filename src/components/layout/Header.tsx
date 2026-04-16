@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { api } from "@/lib/api-path";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { MapPin, Menu, X, User, LogIn, LogOut, LayoutDashboard } from "lucide-react";
@@ -25,7 +26,7 @@ export function Header({ user }: HeaderProps) {
   const router = useRouter();
 
   const handleLogout = async () => {
-    await fetch("/api/auth/logout", { method: "POST" });
+    await fetch(api("/api/auth/logout"), { method: "POST" });
     router.refresh();
   };
 

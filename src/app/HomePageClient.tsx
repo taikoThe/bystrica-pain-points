@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { api } from "@/lib/api-path";
 import { useRouter } from "next/navigation";
 import { MapContainer } from "@/components/map/MapContainer";
 import { MapSearch } from "@/components/map/MapSearch";
@@ -56,7 +57,7 @@ export function HomePageClient({ markers, reports, categories, user }: HomePageC
     setSelectedReportId(id);
     setDetailOpen(true);
     try {
-      const res = await fetch(`/api/reports/${id}`);
+      const res = await fetch(api(`/api/reports/${id}`));
       if (res.ok) {
         const data = await res.json();
         setSelectedReport(data);
@@ -80,7 +81,7 @@ export function HomePageClient({ markers, reports, categories, user }: HomePageC
   const handleConfirm = async () => {
     if (!selectedReport) return;
     try {
-      const res = await fetch(`/api/reports/${selectedReport.id}/confirm`, { method: "POST" });
+      const res = await fetch(api(`/api/reports/${selectedReport.id}/confirm`), { method: "POST" });
       if (res.ok) {
         setIsConfirmed(true);
       }

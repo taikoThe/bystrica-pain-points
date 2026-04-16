@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { api } from "@/lib/api-path";
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { CategoryBadge } from "@/components/shared/CategoryBadge";
 import { ModerationPanel } from "@/components/admin/ModerationPanel";
@@ -23,7 +24,7 @@ export function AdminReportDetailClient({ report, categories }: AdminReportDetai
   const [currentStatus, setCurrentStatus] = useState(report.status);
 
   const handleStatusChange = async (status: ReportStatus, note: string) => {
-    const res = await fetch(`/api/admin/reports/${report.id}`, {
+    const res = await fetch(api(`/api/admin/reports/${report.id}`), {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ status, note }),
