@@ -1,0 +1,261 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "name_sk": "Obvod 1 \u2013 Stred",
+        "description": "Bansk\u00e1 Bystrica-centrum",
+        "councilors": 6,
+        "precincts": "1\u201311",
+        "councilor_names": ["Ivana Figuli", "Ing. Mgr. David Kapusta", "Ing. Mgr. Pavol Katreniak", "Ing. Miriam Lapun\u00edkov\u00e1, MBA", "Ing. arch. Tom\u00e1\u0161 Sobota", "Ing. Branislav Bos\u00e1k"],
+        "councilor_photos": ["ivana-figuli.jpg", "david-kapusta.jpg", "pavol-katreniak.jpg", "miriam-lapunikova.jpg", "tomas-sobota.jpg", "branislav-bosak.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [19.120, 48.738],
+          [19.128, 48.735],
+          [19.135, 48.730],
+          [19.143, 48.730],
+          [19.150, 48.731],
+          [19.155, 48.733],
+          [19.158, 48.736],
+          [19.160, 48.740],
+          [19.158, 48.744],
+          [19.153, 48.747],
+          [19.148, 48.748],
+          [19.140, 48.749],
+          [19.133, 48.748],
+          [19.127, 48.746],
+          [19.122, 48.743],
+          [19.120, 48.738]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "name_sk": "Obvod 2 \u2013 V\u00fdchod",
+        "description": "Majer, Senica, \u0160alkov\u00e1, Uhlisko",
+        "councilors": 2,
+        "precincts": "12\u201317",
+        "councilor_names": ["PhDr. Marcel Pecn\u00edk", "Ing. \u013dubo\u0161 Vrbick\u00fd"],
+        "councilor_photos": ["marcel-pecnik.jpg", "lubos-vrbicky.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [19.155, 48.733],
+          [19.162, 48.730],
+          [19.170, 48.728],
+          [19.180, 48.727],
+          [19.192, 48.728],
+          [19.200, 48.732],
+          [19.205, 48.738],
+          [19.203, 48.745],
+          [19.198, 48.752],
+          [19.190, 48.756],
+          [19.180, 48.758],
+          [19.172, 48.756],
+          [19.165, 48.752],
+          [19.160, 48.748],
+          [19.158, 48.744],
+          [19.160, 48.740],
+          [19.158, 48.736],
+          [19.155, 48.733]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "name_sk": "Obvod 3 \u2013 S\u00e1sov\u00e1",
+        "description": "Rudlov\u00e1, S\u00e1sov\u00e1",
+        "councilors": 9,
+        "precincts": "18\u201339",
+        "councilor_names": ["Ing. Luk\u00e1\u0161 Berec", "Ing. Pavel Fi\u013eo", "Mgr. Jakub Gajdo\u0161\u00edk", "Ing. Milan Lich\u00fd", "Mari\u00e1n Lunter", "Ing. Martin Majling", "Mgr. Mat\u00fa\u0161 Molitoris", "Ing. Michal \u0160kant\u00e1r", "Ing. Martin Tur\u010dan"],
+        "councilor_photos": ["lukas-berec.jpg", "pavel-filo.jpg", "jakub-gajdosik.jpg", "milan-lichy.jpg", "marian-lunter.jpg", "martin-majling.jpg", "matus-molitoris.jpg", "michal-skantar.jpg", "martin-turcan.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [19.090, 48.748],
+          [19.098, 48.745],
+          [19.108, 48.744],
+          [19.118, 48.743],
+          [19.122, 48.743],
+          [19.127, 48.746],
+          [19.133, 48.748],
+          [19.140, 48.749],
+          [19.145, 48.750],
+          [19.143, 48.755],
+          [19.138, 48.760],
+          [19.130, 48.764],
+          [19.120, 48.767],
+          [19.108, 48.768],
+          [19.098, 48.766],
+          [19.090, 48.762],
+          [19.085, 48.757],
+          [19.085, 48.752],
+          [19.090, 48.748]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "name_sk": "Obvod 4 \u2013 Sever",
+        "description": "Jakub, Kostiviarska, Podlavice, Skub\u00edn, U\u013eanka",
+        "councilors": 2,
+        "precincts": "40\u201345",
+        "councilor_names": ["MUDr. Jozef Bal\u00e1\u017e", "MUDr. Zuzana Podmanick\u00e1"],
+        "councilor_photos": ["jozef-balaz.jpg", "zuzana-podmanicka.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [19.085, 48.757],
+          [19.090, 48.762],
+          [19.098, 48.766],
+          [19.108, 48.768],
+          [19.120, 48.767],
+          [19.130, 48.764],
+          [19.138, 48.760],
+          [19.143, 48.755],
+          [19.145, 48.750],
+          [19.148, 48.748],
+          [19.153, 48.747],
+          [19.158, 48.748],
+          [19.160, 48.752],
+          [19.162, 48.758],
+          [19.160, 48.765],
+          [19.155, 48.772],
+          [19.148, 48.778],
+          [19.138, 48.782],
+          [19.125, 48.783],
+          [19.112, 48.780],
+          [19.100, 48.776],
+          [19.090, 48.772],
+          [19.082, 48.767],
+          [19.080, 48.762],
+          [19.085, 48.757]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "name_sk": "Obvod 5 \u2013 Fon\u010dorda",
+        "description": "Fon\u010dorda",
+        "councilors": 7,
+        "precincts": "46\u201362",
+        "councilor_names": ["Mgr. Diana Javor\u010d\u00edkov\u00e1", "Ing. Vladim\u00edr Ivan", "Ing. arch. Hana Kasov\u00e1", "doc. PhDr. Branislav Kov\u00e1\u010dik, PhD.", "Mgr. Ru\u017eena Ma\u0165a\u0161eje", "Mgr. Marek Modransk\u00fd", "Mgr. Peter Gogola"],
+        "councilor_photos": ["diana-javorcikova.jpg", "vladimir-ivan.jpg", "hana-kasova.jpg", "branislav-kovacik.jpg", "ruzena-mataseje.jpg", "marek-modransky.jpg", "peter-gogola.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [19.092, 48.724],
+          [19.105, 48.722],
+          [19.115, 48.723],
+          [19.125, 48.725],
+          [19.135, 48.727],
+          [19.135, 48.730],
+          [19.128, 48.735],
+          [19.120, 48.738],
+          [19.118, 48.743],
+          [19.108, 48.744],
+          [19.098, 48.745],
+          [19.090, 48.748],
+          [19.085, 48.745],
+          [19.082, 48.740],
+          [19.082, 48.735],
+          [19.085, 48.730],
+          [19.092, 48.724]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "name_sk": "Obvod 6 \u2013 Radva\u0148",
+        "description": "Radva\u0148",
+        "councilors": 3,
+        "precincts": "63\u201370",
+        "councilor_names": ["Erika Karov\u00e1", "Roman Mi\u0161k\u00e1r", "Mgr. Patrik Trnka"],
+        "councilor_photos": ["erika-karova.jpg", "roman-miskar.jpg", "patrik-trnka.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [19.115, 48.714],
+          [19.125, 48.712],
+          [19.135, 48.714],
+          [19.145, 48.716],
+          [19.155, 48.720],
+          [19.155, 48.725],
+          [19.155, 48.733],
+          [19.150, 48.731],
+          [19.143, 48.730],
+          [19.135, 48.730],
+          [19.135, 48.727],
+          [19.125, 48.725],
+          [19.115, 48.723],
+          [19.105, 48.722],
+          [19.110, 48.718],
+          [19.115, 48.714]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "name_sk": "Obvod 7 \u2013 Juh",
+        "description": "Ilia\u0161, Kr\u00e1\u013eov\u00e1, Kremni\u010dka, Pr\u0161ianska Terasa, Rakytovce",
+        "councilors": 2,
+        "precincts": "71\u201377",
+        "councilor_names": ["Ing. Igor Ka\u0161per", "Milan Sm\u00e4do"],
+        "councilor_photos": ["igor-kasper.jpg", "milan-smado.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [19.092, 48.724],
+          [19.105, 48.722],
+          [19.110, 48.718],
+          [19.115, 48.714],
+          [19.125, 48.712],
+          [19.135, 48.714],
+          [19.145, 48.716],
+          [19.155, 48.720],
+          [19.155, 48.725],
+          [19.162, 48.730],
+          [19.170, 48.728],
+          [19.175, 48.720],
+          [19.178, 48.712],
+          [19.180, 48.705],
+          [19.178, 48.698],
+          [19.172, 48.692],
+          [19.162, 48.688],
+          [19.150, 48.686],
+          [19.138, 48.688],
+          [19.125, 48.692],
+          [19.112, 48.695],
+          [19.100, 48.700],
+          [19.090, 48.706],
+          [19.085, 48.712],
+          [19.085, 48.718],
+          [19.092, 48.724]
+        ]]
+      }
+    }
+  ]
+}

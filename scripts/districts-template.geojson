@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "name_sk": "Obvod 1 – Stred",
+        "description": "Banská Bystrica-centrum",
+        "councilors": 6,
+        "precincts": "1–11",
+        "councilor_names": ["Ivana Figuli", "Ing. Mgr. David Kapusta", "Ing. Mgr. Pavol Katreniak", "Ing. Miriam Lapuníková, MBA", "Ing. arch. Tomáš Sobota", "Ing. Branislav Bosák"],
+        "councilor_photos": ["ivana-figuli.jpg", "david-kapusta.jpg", "pavol-katreniak.jpg", "miriam-lapunikova.jpg", "tomas-sobota.jpg", "branislav-bosak.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "name_sk": "Obvod 2 – Východ",
+        "description": "Majer, Senica, Šalková, Uhlisko",
+        "councilors": 2,
+        "precincts": "12–17",
+        "councilor_names": ["PhDr. Marcel Pecník", "Ing. Ľuboš Vrbický"],
+        "councilor_photos": ["marcel-pecnik.jpg", "lubos-vrbicky.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "name_sk": "Obvod 3 – Sásová",
+        "description": "Rudlová, Sásová",
+        "councilors": 9,
+        "precincts": "18–39",
+        "councilor_names": ["Ing. Lukáš Berec", "Ing. Pavel Fiľo", "Mgr. Jakub Gajdošík", "Ing. Milan Lichý", "Marián Lunter", "Ing. Martin Majling", "Mgr. Matúš Molitoris", "Ing. Michal Škantár", "Ing. Martin Turčan"],
+        "councilor_photos": ["lukas-berec.jpg", "pavel-filo.jpg", "jakub-gajdosik.jpg", "milan-lichy.jpg", "marian-lunter.jpg", "martin-majling.jpg", "matus-molitoris.jpg", "michal-skantar.jpg", "martin-turcan.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "name_sk": "Obvod 4 – Sever",
+        "description": "Jakub, Kostiviarska, Podlavice, Skubín, Uľanka",
+        "councilors": 2,
+        "precincts": "40–45",
+        "councilor_names": ["MUDr. Jozef Baláž", "MUDr. Zuzana Podmanická"],
+        "councilor_photos": ["jozef-balaz.jpg", "zuzana-podmanicka.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "name_sk": "Obvod 5 – Fončorda",
+        "description": "Fončorda",
+        "councilors": 7,
+        "precincts": "46–62",
+        "councilor_names": ["Mgr. Diana Javorčíková", "Ing. Vladimír Ivan", "Ing. arch. Hana Kasová", "doc. PhDr. Branislav Kováčik, PhD.", "Mgr. Ružena Maťašeje", "Mgr. Marek Modranský", "Mgr. Peter Gogola"],
+        "councilor_photos": ["diana-javorcikova.jpg", "vladimir-ivan.jpg", "hana-kasova.jpg", "branislav-kovacik.jpg", "ruzena-mataseje.jpg", "marek-modransky.jpg", "peter-gogola.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "name_sk": "Obvod 6 – Radvaň",
+        "description": "Radvaň",
+        "councilors": 3,
+        "precincts": "63–70",
+        "councilor_names": ["Erika Karová", "Roman Miškár", "Mgr. Patrik Trnka"],
+        "councilor_photos": ["erika-karova.jpg", "roman-miskar.jpg", "patrik-trnka.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "name_sk": "Obvod 7 – Juh",
+        "description": "Iliaš, Kráľová, Kremnička, Pršianska Terasa, Rakytovce",
+        "councilors": 2,
+        "precincts": "71–77",
+        "councilor_names": ["Ing. Igor Kašper", "Milan Smädo"],
+        "councilor_photos": ["igor-kasper.jpg", "milan-smado.jpg"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CITIZEN
+  MODERATOR
+  ADMIN
+}
+
+enum ReportStatus {
+  NEW
+  UNDER_REVIEW
+  ACCEPTED
+  IN_PROGRESS
+  RESOLVED
+  REJECTED
+  DUPLICATE
+}
+
+enum Severity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+model User {
+  id            String         @id @default(cuid())
+  email         String?        @unique
+  name          String?
+  passwordHash  String?
+  role          Role           @default(CITIZEN)
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  reports       Report[]
+  confirmations Confirmation[]
+  adminActions  AdminAction[]
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  icon        String
+  color       String
+  description String?
+  sortOrder   Int      @default(0)
+  reports     Report[]
+}
+
+model Report {
+  id            String         @id @default(cuid())
+  title         String
+  description   String
+  status        ReportStatus   @default(NEW)
+  latitude      Float
+  longitude     Float
+  address       String?
+  categoryId    String
+  category      Category       @relation(fields: [categoryId], references: [id])
+  userId        String?
+  user          User?          @relation(fields: [userId], references: [id])
+  contactEmail  String?
+  contactPhone  String?
+  isAnonymous   Boolean        @default(false)
+  severity      Severity       @default(MEDIUM)
+  attachments   Attachment[]
+  updates       ReportUpdate[]
+  confirmations Confirmation[]
+  adminActions  AdminAction[]
+  mergedIntoId  String?
+  mergedInto    Report?        @relation("MergedReports", fields: [mergedIntoId], references: [id])
+  mergedReports Report[]       @relation("MergedReports")
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@index([latitude, longitude])
+  @@index([status])
+  @@index([categoryId])
+  @@index([createdAt])
+}
+
+model Attachment {
+  id        String   @id @default(cuid())
+  url       String
+  filename  String
+  mimeType  String
+  size      Int
+  reportId  String
+  report    Report   @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model ReportUpdate {
+  id        String   @id @default(cuid())
+  content   String
+  isPublic  Boolean  @default(true)
+  reportId  String
+  report    Report   @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  authorId  String?
+  createdAt DateTime @default(now())
+}
+
+model Confirmation {
+  id        String   @id @default(cuid())
+  reportId  String
+  report    Report   @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  ipHash    String?
+  createdAt DateTime @default(now())
+
+  @@unique([reportId, userId])
+  @@unique([reportId, ipHash])
+}
+
+model AdminAction {
+  id        String   @id @default(cuid())
+  action    String
+  details   Json?
+  reportId  String
+  report    Report   @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  adminId   String
+  admin     User     @relation(fields: [adminId], references: [id])
+  createdAt DateTime @default(now())
+}

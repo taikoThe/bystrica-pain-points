@@ -1,0 +1,98 @@
+{
+  "1": {
+    "name_sk": "Obvod 1 \u2013 Stred",
+    "streets": [
+      "29. augusta", "Alexandra Matušku", "Astrová", "Azalková", "Bakossova",
+      "Cesta k nemocnici", "Cesta k Smrečine", "Cesta na amfiteáter", "Cesta na štadión",
+      "Cmárovo", "Československej armády", "Dobšinského", "Dolná", "Dolná Strieborná",
+      "F. Švantnera", "Figuša Bystrého", "Gerberová ulica", "Hečkova", "Horná",
+      "Horná Strieborná", "Horné záhrady", "Hurbanova", "Hutná", "J. Cikkera",
+      "Jána Bottu", "Jána Chalupku", "Janka Kráľa", "Jegorovova", "Kapitulská",
+      "Katovná", "Kláry Jarunkovej", "Kollárova", "Komenského", "Krížna",
+      "Kukučínova", "Kuzmányho", "Ladislava Hudeca", "Laskomerská", "Lazovná",
+      "Ľuda Ondrejova", "M. Hattalu", "M. M. Hodžu", "M. Rázusa", "Medený Hámor",
+      "Mikuláša Kováča", "Murgašova", "Muškátová ulica", "Na Graniari", "Na Karlove",
+      "Na Troskách", "Nad plážou", "Nám. slobody", "Nám. Š. Moysesa",
+      "Námestie Ludvika Svobodu", "Námestie SNP", "Národná", "Partizánska cesta",
+      "Petelenova", "Petra Karvaša", "Pod Jesenským víškom", "Pod vysielačom",
+      "Profesora Sáru", "Robotnícka", "Rudlovská cesta", "Ruttkaya Nedeckého",
+      "Severná", "Skuteckého", "Slnečné stráne", "Stoličková", "Strieborné námestie",
+      "Šimona Jurovského", "Školská", "Šoltésovej", "Štadlerovo nábrežie",
+      "Štefánikovo nábrežie", "Tajovského", "Terézie Vansovej", "Tibora Andrašovana",
+      "Trieda SNP", "Vajanského námestie", "Záhradná", "Zvončeková ulica", "Železničiarska"
+    ]
+  },
+  "2": {
+    "name_sk": "Obvod 2 \u2013 Východ",
+    "streets": [
+      "9. mája", "Bellušova", "Boženy Němcovej", "Cementárenská cesta", "Družstevná",
+      "Fraňa Kráľa", "Golianova", "Hronská", "Hronské predmestie", "Hviezdoslavova",
+      "Jesenského", "Jiráskova", "Lesná", "Ľupčianska", "Majerská cesta",
+      "Mičinská cesta", "Mieru", "Na Hrbe", "Na Starej tehelni", "Na Uhlisku",
+      "Pod Kalváriou", "Pod rybou", "Pod Turíčkou", "Pod Urpínom", "Podjavorinskej",
+      "Poľovnícka", "Ponická ulica", "Priemyselná ulica", "Senická cesta", "Stavebná",
+      "Šalkovská cesta", "Technická ulica", "Timravy", "Viestova", "Žltý piesok"
+    ]
+  },
+  "3": {
+    "name_sk": "Obvod 3 \u2013 Sásová",
+    "streets": [
+      "Agátová", "Beskydská", "Borová ulica", "Dedinská", "Dubová", "Ďumbierska",
+      "Fatranská", "Garbanka", "Gerlachovská", "Haškova", "Hlboká", "Chabenecká",
+      "Inovecká", "Javornícka", "Kapitána Jaroša", "Karpatská", "Kráľovohoľská",
+      "Krivánska", "Magurská", "Marka Čulena", "Mateja Bela", "Mladých budovateľov",
+      "Na Dolinky", "Na plaváreň", "Na Skalici", "Na Tále", "Na Zábave", "Odbojárov",
+      "Pieninská", "Pod Banošom", "Pod cintorínom", "Pod Hôrkou", "Pod Skalkou",
+      "Rudelínova ulica", "Rudlovská cesta", "Rudohorská", "Ružová", "Sásovská cesta",
+      "Sitnianska", "Starohorská", "Stránska", "Strážovská", "Strmá", "Surovská",
+      "Tatranská", "Veterná", "Zdenka Mikulu"
+    ]
+  },
+  "4": {
+    "name_sk": "Obvod 4 \u2013 Sever",
+    "streets": [
+      "Buková", "Gaštanová", "Harmanecká cesta", "Hrušková", "Jakubská cesta",
+      "Jaseňová", "Javorová", "Jedľová", "Jelšová", "Jozefa Mistríka",
+      "Kostiviarska cesta", "Limbová", "Lipová", "Lúčičky", "Mlynská",
+      "Na Čiertolí", "Na Lúčkach", "Na úbočí", "Nový Svet", "Ovocná",
+      "Pestovateľská", "Pod Dúbravou", "Pod Stráňou", "Podlavická cesta",
+      "Povstalecká cesta", "Priehrada", "Skubínska cesta", "Topoľová",
+      "Uľanská cesta", "Ulička", "Višňová", "Záhumnie", "Závoz"
+    ]
+  },
+  "5": {
+    "name_sk": "Obvod 5 \u2013 Fončorda",
+    "streets": [
+      "Bagarova", "Dlhá ulica", "Družby", "Gorkého", "Havranské", "Internátna",
+      "Jazmínová", "Jilemnického", "Kapitána Nálepku", "Kyjevské námestie",
+      "Kovačická ulica", "Kvetinová", "Mládežnícka", "Moskovská", "Nám. Ľ. Štúra",
+      "Nešporova", "Nová", "Nové Kalište", "Okružná", "Oremburská",
+      "Prvosienková ulica", "Sadová", "Slnečná", "Spojová", "Šalgotarjánska",
+      "Švermova", "Tichá", "Trieda Hradca Králové", "Tulská", "Vršacká ulica",
+      "Wolkerova", "Zadarská ulica", "Zelená"
+    ]
+  },
+  "6": {
+    "name_sk": "Obvod 6 \u2013 Radvaň",
+    "streets": [
+      "Bernolákova", "Bočná", "Cintorínska", "Jarná", "Jesenná", "Kalinčiakova",
+      "Králická cesta", "Krátka", "Letná", "Malachovská cesta", "Na Kútinách",
+      "Na Motyčinách", "Nám. Ľ. Štúra", "Ovčiarska cesta", "Pod Suchým vrchom",
+      "Poľná", "Pršianska cesta", "Radvanská", "Sládkovičova", "Stredná",
+      "Stromová", "Stupy", "Zimná"
+    ]
+  },
+  "7": {
+    "name_sk": "Obvod 7 \u2013 Juh",
+    "streets": [
+      "Ametystová", "Borievková", "Borovicová", "Brestová ulica", "Brezová",
+      "Bronzová", "Čerešňová", "Diamantová ulica", "Drienková", "Iliašská cesta",
+      "Jabloňová", "Jantárová ulica", "Jaspisová ulica", "Klenová ulica",
+      "Kremnička", "Kremeňová ulica", "Liesková ulica", "Malachitová", "Medená",
+      "Mosadzná", "Opálová", "Plánková", "Platinová ulica", "Podháj",
+      "Rakytovská cesta", "Rubínová", "Rumelková ulica", "Sládkovičova", "Smreková",
+      "Sokolovská", "Šípková", "Topásová ulica", "Tyrkysová ulica", "Trnková",
+      "Víbová", "Zafírová ulica", "Zlatá", "Zvolenská cesta", "Železná ulica"
+    ]
+  }
+}
