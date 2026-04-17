@@ -385,12 +385,18 @@ All inputs validated with Zod schemas (server-side in API routes, client-side fo
 - **File uploads**: Currently stored in `public/uploads/` — production should use cloud storage (S3, Cloudflare R2)
 - **No email notifications**: Citizens don't get notified when status changes
 - **No image optimization**: Uploaded photos served as-is, should add compression/resizing
-- **No rate limiting**: API routes have no rate limiting or CSRF protection
 - **No pagination**: Report lists load all data; should add cursor-based pagination for scale
 - **No i18n framework**: UI is hardcoded Slovak; adding multilingual support would require next-intl or similar
 - **No real-time updates**: Map doesn't auto-refresh; would need WebSockets or polling
 - **Admin merge duplicates**: Schema supports it (mergedIntoId) but UI is not yet built
 - **No map heatmap mode**: Planned but not implemented
+
+### Bugs Fixed
+
+**Mobile filter dropdowns unresponsive inside bottom sheet (2026-04-17)**
+- **Symptom:** On mobile, opening the filter bottom sheet and tapping a Category or Status dropdown did nothing. In list view, the dropdown opened but appeared behind other content and could not be interacted with. The `/browse` page was unaffected.
+- **Root cause:** The bottom sheet (`src/components/ui/sheet.tsx`) uses `z-[2000]` for both its overlay and content panel. The `DropdownMenuContent` in `src/components/ui/dropdown-menu.tsx` was set to `z-50`. Since the dropdown portal renders at document root level, it was positioned behind the sheet overlay (`z-50 < z-2000`), making it invisible and unclickable.
+- **Fix:** Changed `z-50` to `z-[2100]` in `DropdownMenuContent` (`src/components/ui/dropdown-menu.tsx` line 22). The dropdown now renders above the sheet overlay on all screens.
 
 ---
 
