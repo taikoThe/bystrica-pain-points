@@ -7,6 +7,7 @@ import { StatusBadge } from "@/components/shared/StatusBadge";
 import { CategoryBadge } from "@/components/shared/CategoryBadge";
 import { ReportTimeline } from "./ReportTimeline";
 import { formatDate, formatRelativeDate } from "@/lib/utils";
+import { api } from "@/lib/api-path";
 import type { ReportWithRelations } from "@/types";
 
 interface ReportDetailProps {
@@ -65,7 +66,7 @@ export function ReportDetail({ report, onBack, onConfirm, isConfirmed, confirmCo
               {(showAllPhotos ? photos : photos.slice(0, 4)).map((photo) => (
                 <img
                   key={photo.id}
-                  src={photo.url}
+                  src={api(photo.url)}
                   alt={photo.filename}
                   className="w-full h-32 object-cover rounded-lg border border-slate-200"
                 />

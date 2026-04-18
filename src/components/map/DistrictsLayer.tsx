@@ -54,7 +54,7 @@ export function DistrictsLayer({ visible }: { visible: boolean }) {
       .map((name, i) => {
         const photo = photos[i];
         const imgHtml = photo
-          ? `<img src="/councillors/${photo}" alt="${name}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;flex-shrink:0" />`
+          ? `<img src="${api(`/councillors/${photo}`)}" alt="${name}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;flex-shrink:0" />`
           : `<div style="width:36px;height:36px;border-radius:50%;background:#e2e8f0;flex-shrink:0"></div>`;
         return `<div style="display:flex;align-items:center;gap:8px;padding:4px 0">${imgHtml}<span style="font-size:12px;color:#334155">${name}</span></div>`;
       })

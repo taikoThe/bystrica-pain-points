@@ -76,7 +76,7 @@ export function AdminReportDetailClient({ report, categories }: AdminReportDetai
                   {photos.map((photo) => (
                     <img
                       key={photo.id}
-                      src={photo.url}
+                      src={api(photo.url)}
                       alt={photo.filename}
                       className="w-full h-32 object-cover rounded-lg border border-slate-200"
                     />
